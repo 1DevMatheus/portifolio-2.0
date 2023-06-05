@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import CardMedia from "@mui/material/CardMedia";
 import Button from '@mui/material/Button';
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 import "./Projects.css";
 import App from '../../App';
@@ -14,6 +16,9 @@ import App from '../../App';
 
 export default () => {
   
+  useEffect(()=>{
+    Aos.init({duration: 1500});
+}, [])
 
 
   var projects = [
@@ -70,7 +75,7 @@ export default () => {
   return (
     <>
       {projects.map((projects) => (
-        <Card className="card hidden" >
+        <Card data-aos="flip-left" className="card hidden" >
           <CardContent className="card-projects">
             <Typography variant="h5" component="div">
               {projects.name}

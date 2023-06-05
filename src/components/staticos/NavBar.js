@@ -52,7 +52,7 @@ export default () => {
 
         <div className="nav">
           <div className="navContent">
-            <a href="#section-1"> Projects</a>
+            <a href="#section-2"> Projects</a>
           </div>
           <span>|</span>
           <div className="navContent">
@@ -60,7 +60,7 @@ export default () => {
           </div>
           <span>|</span>
           <div className="navContent">
-            <a href="#section-2"> Contact</a>
+            <a href="#section-4"> Contact</a>
           </div>
         </div>
         <div id='show' onClick={handleShowNavMenu} className="openIn">
@@ -69,7 +69,7 @@ export default () => {
           </span>
           <div onMouseLeave={handleClose} id='list' className='fechado'>
             <div>
-            <div><a  href="#section-1">Projects</a></div>
+            <div><a  href="#section-2">Projects</a></div>
             <div><a href="">About Me</a></div>
             <div><a href="">Contact</a></div>
             </div>
