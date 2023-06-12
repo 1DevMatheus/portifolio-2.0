@@ -60,7 +60,7 @@ export default () => {
           </div>
           <span>|</span>
           <div className="navContent">
-            <a href="#section-4"> Contact</a>
+            <a href="#contact"> Contact</a>
           </div>
         </div>
         <div id='show' onClick={handleShowNavMenu} className="openIn">

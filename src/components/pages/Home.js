@@ -4,6 +4,7 @@ import { Switch } from "@mui/material";
 import Projects from "../projects/Projects";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Contact from "./Contact";
 
 export default () => {
   useEffect(() => {
@@ -538,6 +539,7 @@ export default () => {
         <section id="section-3">
           <div className="about-me-container">
             <main className="about-me">
+            <h2>A litlle about me</h2>
               <div data-aos="fade-right" className="print-1">
                 <img
                   src="https://ik.imagekit.io/wwd7wv4ro/projects_images/code.png?updatedAt=1685988162173"
@@ -562,17 +564,17 @@ export default () => {
               <h2>Technologies whren I known</h2>
               
               <div className='tech-icons'>
-                <img data-aos="flip-left"  data-aos-duration="1200" data-aos-delay="300" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/java.png?updatedAt=1685995513996" alt="java icon" />
-                <img data-aos="flip-left"  data-aos-duration="1300" data-aos-delay="300" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/python.png?updatedAt=1685995514077" alt="Python icon" />
-                <img data-aos="flip-left"  data-aos-duration="1400" data-aos-delay="300" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/javascript.png?updatedAt=1685995513987" alt="Javascript icon" />
-                <img data-aos="flip-left"  data-aos-duration="1500" data-aos-delay="300" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/typescript.png?updatedAt=1685995513990" alt="Typescript icon" />
-                <img data-aos="flip-left"  data-aos-duration="1600" data-aos-delay="300" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/html-5.png?updatedAt=1685995513970" alt="HTML5 icon" />
-                <img data-aos="flip-left"  data-aos-duration="1700" data-aos-delay="300" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/css.png?updatedAt=1685995513964" alt="CSS3 icon" />
-                <img data-aos="flip-left"  data-aos-duration="1800" data-aos-delay="300" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/mysql__1_.png?updatedAt=1685995513838" alt="MySQL icon" />
-                <img data-aos="flip-left"  data-aos-duration="1900" data-aos-delay="300" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/React-icon.svg.png?updatedAt=1685995514334" alt="React icon" />
-                <img data-aos="flip-left"  data-aos-duration="2000" data-aos-delay="300" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/68747470733a2f2f7061676570726f2e636f2f626c6f672f77702d636f6e74656e742f75706c6f6164732f323032302f30332f72656163742d6e61746976652d6c6f676f2d333234783337352e706e67.webp?updatedAt=1685997367414" alt="React Native icon" />
+                <img data-aos="flip-left"  data-aos-duration="1200" data-aos-delay="500" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/java.png?updatedAt=1685995513996" alt="java icon" />
+                <img data-aos="flip-left"  data-aos-duration="1300" data-aos-delay="600" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/python.png?updatedAt=1685995514077" alt="Python icon" />
+                <img data-aos="flip-left"  data-aos-duration="1400" data-aos-delay="700" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/javascript.png?updatedAt=1685995513987" alt="Javascript icon" />
+                <img data-aos="flip-left"  data-aos-duration="1500" data-aos-delay="800" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/typescript.png?updatedAt=1685995513990" alt="Typescript icon" />
+                <img data-aos="flip-left"  data-aos-duration="1600" data-aos-delay="900" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/html-5.png?updatedAt=1685995513970" alt="HTML5 icon" />
+                <img data-aos="flip-left"  data-aos-duration="1700" data-aos-delay="1000" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/css.png?updatedAt=1685995513964" alt="CSS3 icon" />
+                <img data-aos="flip-left"  data-aos-duration="1800" data-aos-delay="1100" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/mysql__1_.png?updatedAt=1685995513838" alt="MySQL icon" />
+                <img data-aos="flip-left"  data-aos-duration="1900" data-aos-delay="1200" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/React-icon.svg.png?updatedAt=1685995514334" alt="React icon" />
+                <img data-aos="flip-left"  data-aos-duration="2000" data-aos-delay="1300" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/68747470733a2f2f7061676570726f2e636f2f626c6f672f77702d636f6e74656e742f75706c6f6164732f323032302f30332f72656163742d6e61746976652d6c6f676f2d333234783337352e706e67.webp?updatedAt=1685997367414" alt="React Native icon" />
 
-
+                  
               </div>
             </div>
           </div>
@@ -592,6 +594,10 @@ export default () => {
             </div>
           </div>
         </div>
+      <div id='contact'>
+              <h2 data-aos="fade-up" >Contact me</h2>
+              <div data-aos="fade-up"> <Contact /></div>
+      </div>
       </div>
     </>
   );

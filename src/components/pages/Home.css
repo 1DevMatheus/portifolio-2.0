@@ -7,6 +7,7 @@ html{
     overflow-x: hidden;
 }
 :root {
+  --bgc-primary: #4f4f4f;
   --color-red: #ff0000;
   --color-orange: #ffa600;
   --color-blue: #44fc;
@@ -21,6 +22,7 @@ html{
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  
 }
 .ligthMode {
   width: 100vw;
@@ -40,7 +42,7 @@ html{
 .darkMode {
   width: 100vw;
   height: 100vh;
-  background-color: #010000;
+  background-color:var(--bgc-primary);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23c00000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23970000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23d80018' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23ca0010' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23bb0033' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239f0030' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23cf0031' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23b9002e' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23a2006d' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23870062' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23a6007e' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23810073' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
@@ -208,7 +210,7 @@ hr {
   justify-content: center;
 }
 #section-2 {
-  background-color: var(--color-blue);
+  background-color: var(--bgc-primary);
   width: 100%;
   height: 100%;
   align-items: center;
@@ -235,7 +237,20 @@ hr {
   width: 100vw;
   height: auto;
 }
-
+.about-me-container main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-me-container main h2{
+  font-family: "Cherry Bomb One", cursive;
+  color: #fff;
+  font-size: 49px;
+  font-weight: 100;
+  text-shadow: 4px 0px 1px #000;
+  overflow: hidden !important;
+}
 #section-3 .print-1 {
   display: flex;
   flex-direction: column;
@@ -294,7 +309,7 @@ hr {
 
 }
 #section-3 {
-  background-color: rgb(21, 255, 0);
+  background-color: var(--bgc-primary);
 
   width: 100vw;
   height: auto;
@@ -308,12 +323,18 @@ hr {
     padding-bottom: 20%;
     padding-top: 10%;
 }
-
+.tech-icons-container h2{
+  font-family: "Cherry Bomb One", cursive;
+  color: #fff;
+  font-size: 49px;
+  font-weight: 100;
+  text-shadow: 4px 0px 1px #000;
+  overflow: hidden !important;
+}
 
 .tech-icons img{
-    width: 50px;
+    width: 80px;
     height: auto;
-    background-color: #706969;
 }
 
 .tech-icons {
@@ -324,4 +345,17 @@ hr {
     gap: 20px;
     margin-top: 10%;
     margin-bottom: 20%;
+}
+
+
+/* aREA DE CONTATO */
+
+#contact h2{
+  font-family: "Cherry Bomb One", cursive;
+  color: #fff;
+  font-size: 49px;
+  font-weight: 100;
+  text-shadow: 4px 0px 1px #000;
+  overflow: hidden !important;
+  margin-top: 10%;
 }
