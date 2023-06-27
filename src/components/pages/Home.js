@@ -29,9 +29,7 @@ export default () => {
     <>
       <div className="container-home">
         <div id="section-1" className="section-1 ligthMode">
-          <div className="darkmode-btn">
-            <Switch onChange={handleChange} />
-          </div>
+        
           <div>
             <div id="typing" className="typing-welcome-ligth">
               <p>Welcome to my world.</p>

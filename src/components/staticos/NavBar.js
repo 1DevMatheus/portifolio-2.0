@@ -40,7 +40,7 @@ export default () => {
             <CloseIcon />
           </div>
             <div className="darkMode-tittle">
-            <span >Dark Mode</span>
+         
             </div>
           
           <span onClick={handleClose}  className="logo">  {open_tag}1DevMatheus {bar}{tag} </span>
