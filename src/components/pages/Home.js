@@ -553,13 +553,13 @@ export default () => {
                 <img src="https://ik.imagekit.io/wwd7wv4ro/projects_images/code1.png?updatedAt=1685991479290" alt="about me image" />
                 <div className='text-about-me-2'>
                   <p>Always seching be better and dyscovery new things</p>
-                   <p> Love the americando culture, I want live im NY one day </p>
+                   <p> Love the American culture, I want live im NY one day </p>
                    <p>My plan is to do my wedding there, "but don't tell my wife" </p>
                 </div>
               </div>
             </main>
             <div className='tech-icons-container'>
-              <h2>Technologies whren I known</h2>
+              <h2>Technologies I knew</h2>
               
               <div className='tech-icons'>
                 <img data-aos="flip-left"  data-aos-duration="1200" data-aos-delay="500" src="https://ik.imagekit.io/wwd7wv4ro/programminf_icons/java.png?updatedAt=1685995513996" alt="java icon" />
