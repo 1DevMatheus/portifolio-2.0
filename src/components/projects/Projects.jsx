@@ -1,25 +1,20 @@
-import React, {useEffect} from "react";
+/* eslint-disable import/no-anonymous-default-export */
+import React, { useEffect } from "react";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardMedia from "@mui/material/CardMedia";
-import Button from '@mui/material/Button';
 
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 import "./Projects.css";
-import App from '../../App';
-
-
 
 export default () => {
-  
-  useEffect(()=>{
-    Aos.init({duration: 1500});
-}, [])
-
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
   var projects = [
     {
@@ -49,10 +44,10 @@ export default () => {
     {
       id: 4,
       name: "Calculator with Vanilla Javascript",
-      technologies: "Javascript & Bootstrap 4",
+      technologies: "JavaScript & Bootstrap 4",
       execTime: "4 Hours",
       img: "https://ik.imagekit.io/wwd7wv4ro/projects_images/Sem_t%C3%ADtulo.png?updatedAt=1685811279959",
-      URL : "https://1devmatheus.github.io/Portifolio1DevMatheus/calculadora.html",
+      URL: "https://1devmatheus.github.io/Portifolio1DevMatheus/calculadora.html",
     },
     {
       id: 5,
@@ -60,22 +55,30 @@ export default () => {
       technologies: "Javascript, HTML5 & CSS3",
       execTime: "8 Hours",
       img: "https://ik.imagekit.io/wwd7wv4ro/projects_images/app-MataMosquito.png?updatedAt=1685811275024",
-      URL : "https://app-mata-mosquito.netlify.app/",
+      URL: "https://app-mata-mosquito.netlify.app/",
     },
     {
       id: 6,
-      name: 'Coming soon',
+      name: "Rick And Morty Wiki",
+      technologies: "HTML, CSS, JavaScript Vanilla",
+      execTime: "22 hours",
+      img: "https://ik.imagekit.io/wwd7wv4ro/projects_images/projeto-rick-and-morty.png?updatedAt=1690494282695",
+      URL: "https://rickandmorty-project-one.vercel.app/",
+    },
+    {
+      id: 7,
+      name: "Coming soon",
       technologies: "Coming soon",
       execTime: "Coming sson",
       img: "https://dks.pt/wp-content/uploads/2015/07/coming-soon.jpg",
-      URL : "Coming soon",
+      URL: "Coming soon",
     },
   ];
 
   return (
     <>
       {projects.map((projects) => (
-        <Card data-aos="flip-left" className="card hidden" >
+        <Card data-aos="flip-left" className="card hidden">
           <CardContent className="card-projects">
             <Typography variant="h5" component="div">
               {projects.name}
@@ -101,7 +104,14 @@ export default () => {
               alt="Project image"
             />
             <CardActions>
-                <a className="project-link" href={projects.URL} target="_blank">See More</a>
+              <a
+                className="project-link"
+                href={projects.URL}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visit the project
+              </a>
             </CardActions>
           </CardContent>
         </Card>
